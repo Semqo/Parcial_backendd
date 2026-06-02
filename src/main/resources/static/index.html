@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gestión de Bibliotecas</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Gestión de Bibliotecas</h1>
+
+      <section id="form-section">
+        <h2>Crear Biblioteca</h2>
+        <form id="biblioteca-form">
+          <label>Nombre<br><input type="text" id="nombre" required></label>
+          <label>Dirección<br><input type="text" id="direccion" required></label>
+          <label>Teléfono<br><input type="text" id="telefono" required></label>
+          <label>Responsable<br><input type="text" id="responsable" required></label>
+          <button type="submit">Crear</button>
+        </form>
+        <div id="message" role="status" aria-live="polite"></div>
+      </section>
+
+      <section id="list-section">
+        <h2>Bibliotecas Registradas</h2>
+        <table id="biblioteca-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Dirección</th>
+              <th>Teléfono</th>
+              <th>Responsable</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
